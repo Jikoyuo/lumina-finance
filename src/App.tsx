@@ -26,7 +26,7 @@ export default function App() {
   const [gasPrice, setGasPrice] = useState(15);
   const [selectedAsset, setSelectedAsset] = useState<Asset | null>(null);
   const [isNotificationsOpen, setIsNotificationsOpen] = useState(false);
-
+  setTransactions(initialTransactions);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
