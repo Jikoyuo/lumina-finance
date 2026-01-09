@@ -19,14 +19,14 @@ export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [currentView, setCurrentView] = useState("dashboard");
   const [assets, setAssets] = useState<Asset[]>(initialAssets);
-  const [transactions, setTransactions] =
+  const [transactions] =
     useState<Transaction[]>(initialTransactions);
   const [walletAddress, setWalletAddress] = useState<string | null>(null);
   const [isConnecting, setIsConnecting] = useState(false);
   const [gasPrice, setGasPrice] = useState(15);
   const [selectedAsset, setSelectedAsset] = useState<Asset | null>(null);
   const [isNotificationsOpen, setIsNotificationsOpen] = useState(false);
-  setTransactions(initialTransactions);
+  // setTransactions(initialTransactions);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
