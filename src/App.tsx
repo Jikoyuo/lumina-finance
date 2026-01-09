@@ -32,7 +32,6 @@ export default function App() {
   useEffect(() => {
     setTimeout(() => setIsLoading(false), 2500);
 
-    // Live Data Loop
     const interval = setInterval(() => {
       setAssets((prev) =>
         prev.map((a) => ({
